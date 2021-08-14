@@ -6,12 +6,6 @@ require('dotenv').config();
 
 const app = express();
 
-// ****************** require body-parser here: ******************
-// ... your code here
-const bodyParser = require('body-parser');
-app.use(bodyParser.urlencoded({ extended: true }));
-// *********************************************************
-
 app.set('views', __dirname + '/views');
 app.set('view engine', 'hbs');
 
