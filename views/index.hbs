@@ -5,11 +5,16 @@
 <div>
     <form action="/create" method="POST">
         <div>
-            <label for="age-input">Age</label>
-            <input id="age-input" name="theAge" type="number">
+            <label>Age: 
+                <input type="number" name="theAge" />
+            </label>
+            
         </div>
+        
         <button type="submit">Send age info</button>
+
         <br />
+        
         <small>Once you think you solved question 4, check your terminal for the output.</small>
     </form>
 </div>
@@ -24,33 +29,54 @@ full address (we need input field for the street, street number, city, zip code 
 Then create a route in the `app.js` where anything user inputted would be available.  --}}
 
 <div>
-    <form action="/new/user" method="POST">
-        <div id="full-name">
+    <form action="" method="">
+        <div> {{!-- full name --}}
             <h4>Full name:</h4>
-            <label for="fname-input">First name</label>
-            <input id="fname-input" name="firstName" type="text">
-            <label for="lname-input">Last name</label>
-            <input id="lname-input" name="lastName" type="text">
+                <label >First name: 
+                    <input type="text" name="firstName" />
+                </label>
+                
+                <label>Last name: 
+                    <input type="text" name="lastName" />
+                </label>
         </div>
+
         <br />
-        <div id="full-address">
+
+        <div> {{!-- full address --}}
             <h4>Address:</h4>
-            <label for="street-input">Street</label>
-            <input id="street-input" name="street" type="text">
-            <br />
-            <label for="number-input">Number</label>
-            <input id="number-input" name="number" type="number">
-            <br />
-            <label for="city-input">City</label>
-            <input id="city-input" name="city" type="text">
-            <br />
-            <label for="zip-input">Zip</label>
-            <input id="zip-input" name="zip" type="text">
-            <br />
-            <label for="country-input">Country</label>
-            <input id="country-input" name="country" type="text">
+                <label>Street: 
+                    <input type="text" name="street" />
+                </label>
+
+                <br />
+
+                <label>Number: 
+                    <input type="number" name="number" />
+                </label>
+
+                <br />
+
+                <label>City: 
+                    <input type="text" name="city" />
+                </label>
+            
+                <br />
+
+                <label>Zip: 
+                    <input type="text" name="zip" />
+                </label>
+                
+                <br />
+
+                <label>Country: 
+                    <input type="text" name="country" />
+                </label>
         </div>
+        
         <br />
+
         <button type="submit">Send</button>
+        
     </form>
 </div>
